@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-Bar">
+            <div>
+                <button class="imbd-but" id="imdb-button">IMdb</button>
+
+            </div>
+            <div class="Menu-div">
+                <i class="fas fa-bars" style="font-size: 24px; cursor: pointer;"></i>
+                <span>Menu</span>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" id="dropdownButton">
+                  All <span id="arrow">▼</span>
+                </button>
+                <div class="dropdown-content" id="dropdownMenu">
+                  <a href="#">All</a>
+                  <a href="#">Titles </a>
+                  <a href="#">TV Episodes</a>
+                  <a href="#">Celebs</a>
+                </div>
+              </div>
+              <div class="search-box">
+                <input type="text" placeholder="Search IMDb" id="searchBar" />
+                <i class="fas fa-magnifying-glass" id="clickBar"></i>
+              </div>
+              <h3 style="color: white; font-weight: 500;">IMDb<span style="color: rgb(33, 108, 143);">Pro</span></h3>
+
+              <span class="pipbut">|</span>
+              <div class="watchlist">
+                <button class="watchlist-btn">
+                    <i class="fas fa-bookmark"></i>
+                    Watchlist
+                  </button>
+              </div>
+             
+
+              <button class="signBut">Sign In </button>
+
+            <div class="lang-dropdown" id="langDropdown">
+                <div class="lang-btn" id="langButton">EN</div>
+                <div class="lang-menu" id="langMenu">
+                <a href="#">English - United States</a>
+                <a href="#">English - United Kingdom</a>
+                <a href="#">Français - France</a>
+                <a href="#">Español - España</a>
+                <a href="#">हिन्दी - भारत</a>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <div class="changContent"></div>
+        <div id="main-container">
+
+
+        </div>
+    </main>
+
+    
+</body>
+<script src="index.js"></script>
+</html>
