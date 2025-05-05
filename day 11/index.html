@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        /* universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* type selector */
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(213, 229, 235);
+
+        }
+        /*  class selector */
+        .header {
+            width: 100vw;
+            height: 7rem;
+            background-color: rgb(63, 60, 60);
+            margin-bottom: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: .8rem;
+            margin-top: 1.3rem;
+
+        }
+
+        /* using descendant selector */
+        .header h1,
+        p {
+            color: white;
+            line-height: 2rem;
+        }
+
+        /* using id selector */
+        #headingtag {
+            font-size: 2rem;
+        }
+
+        #paratag {
+            margin-right: 1rem;
+            font-size: 1rem;
+            line-height: 1rem;
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: repeat(2, 450px);
+            width: 60vw;
+            height: 70vh;
+            margin: auto;
+            place-content: center;
+            border: 1px none;
+            align-items: center;
+            row-gap: 20px;
+            column-gap: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        @media(max-width:930px) {
+            .main {
+                display: grid;
+                grid-template-columns: repeat(1, 450px);
+                width: 100vw;
+                height: auto;
+            }
+            /* here i have to apply same things which are in my main container and every one is direct child of main  */
+            /* group selector    */
+
+            .main > #first,.main >#second,.main>#third,.main>#forth{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                width: 70vw;
+                height: auto;
+            }
+            profile img{
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        @media(max-width:530px) {
+            .main {
+                display: grid;
+                grid-template-columns: repeat(1, 350px);
+                width: 80vw;
+                height: auto;
+
+            }
+            .profile img{
+                object-fit: cover;
+                object-position: center;
+            }
+
+            .main #first {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                width: 80vw;
+                height: auto;
+
+            }
+
+            .main #second {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 80vw;
+                height: auto;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .main #third {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 80vw;
+                height: auto;
+
+            }
+
+            .main #forth {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 80vw;
+                height: auto;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+        }
+        @media(max-width:395px) {
+            .main {
+                display: grid;
+                grid-template-columns: repeat(1, 350px);
+                width: 100vw;
+                height: auto;
+
+            }
+            .profile img{
+                object-fit: cover;
+                object-position: center;
+            }
+
+            .main #first {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                width: 90vw;
+                height: auto;
+
+            }
+
+            .main #second {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 90vw;
+                height: auto;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .main #third {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 90vw;
+                height: auto;
+
+            }
+
+            .main #forth {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 90vw;
+                height: auto;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* child selector used  direct child*/
+        .footer>p {
+            line-height: 1rem;
+            margin-top: 2rem;
+            font-size: 20px;
+            color: rgb(51, 49, 49);
+        }
+
+        #first {
+        
+            background-color: white;
+            border: 2px solid rgb(52, 172, 162);
+            border-radius: 7px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #second {
+            
+            background-color: rgb(230 245 3 / 35%);
+            border: 2px solid rgb(189, 126, 10);
+            border-radius: 7px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        #third {
+            
+            background-color: white;
+            border: 2px solid rgb(155, 150, 150);
+            border-radius: 7px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+
+        }
+
+        #forth {
+            background-color: white;
+            border: 2px dotted lightcoral;
+            border-radius: 7px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .profile {
+            margin-top: 2rem;
+            width: 11VW;
+            height: 18VH;
+            background-color: rgb(184, 174, 174);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        #profile2 {
+            margin-top: 2rem;
+            width: 11VW;
+            height: 18VH;
+            background-color: rgb(187 157 71 / 33%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            margin-bottom: 10px;
+
+        }
+
+        #profile3 {
+            margin-top: 2rem;
+            width: 11VW;
+            height: 18VH;
+            background-color: rgba(214, 197, 197, 0.692);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            margin-bottom: 10px;
+
+        }
+
+        #profile4 {
+            margin-top: 2rem;
+            width: 11VW;
+            height: 18VH;
+            background-color: rgb(231, 173, 183);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .profile img {
+            width: 85px;
+            height: 100px;
+            margin-top: .8rem;
+            padding: 5px 5px 5px 5px;
+            margin-bottom: 0.8rem;
+        }
+
+        #profile2 img {
+            width: 85px;
+            height: 100px;
+            margin-top: .8rem;
+            padding: 5px 5px 5px 5px;
+            margin-bottom: 0.8rem;
+
+        }
+
+        #profile3 img {
+            width: 85px;
+            height: 100px;
+            margin-top: .8rem;
+            padding: 5px 5px 5px 5px;
+            margin-bottom: 0.8rem;
+        }
+
+        #profile4 img {
+            width: 85px;
+            height: 100px;
+            margin-top: .8rem;
+            padding: 5px 5px 5px 5px;
+            margin-bottom: 0.8rem;
+        }
+
+        .firpara {
+            color: black;
+            font-size: 23Px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1 id="headingtag">Team Members</h1>
+        <p id="paratag">Hover over a card to see details</p>
+    </div>
+    <div class="main">
+
+        <div id="first">
+            <div class="profile">
+                <img src="user-solid.svg">
+            </div>
+
+            <h2>Alice</h2>
+            <p class="firpara">Fronted Develper</p>
+        </div>
+        <div id="second">
+            <div id="profile2">
+                <img src="user-solid.svg">
+            </div>
+            <h2>Bob</h2>
+            <p class="firpara"> Backend Developer</p>
+        </div>
+        <div id="third">
+            <div id="profile3">
+                <img src="user-solid.svg">
+            </div>
+            <h2>Charlie</h2>
+            <p class="firpara">Fullstack Developer</p>
+        </div>
+        <div id="forth">
+            <div id="profile4">
+                <img src="user-solid.svg">
+            </div>
+            <h2>Diana</h2>
+            <p class="firpara">UI/UX Designer</p>
+        </div>
+
+
+    </div>
+    <div class="footer">
+        <p>&#169; 2025 CSS Selectors Demo</p>
+    </div>
+
+</body>
+
+</html>

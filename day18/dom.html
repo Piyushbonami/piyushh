@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mydiv"><h1 id="fir">Welcome to CodeHelp</h1>
+
+        <h2 class="fir1">Welcome to CodeHelp2</h2>
+    
+        <h3>Welcome to CodeHelp</h3></div>
+    
+</body>
+<script>
+    //targting id fir
+    // let elemment=document.getElementById("fir");
+    // console.log(elemment);
+    // let a=elemment;
+    // a.style.color="red";
+    // a.style.fontSize="50px";
+    // //targeting class fir1
+    // let elemment1=document.getElementsByClassName("fir1");
+    // console.log(elemment1);
+    // let b=elemment1;
+    // b[0].style.color="blue";
+    // b[0].style.fontSize="50px";
+    //now retriving all the elements
+    // let a=elemment.innerHTML;
+    // console.log(a);
+    //now changing the inner html
+    // let neww="welcome to world of coding";
+    // elemment.innerHTML=neww.toUpperCase();
+    // let element=document.createElement("p");
+    // element.textContent="this is my first paragraph";
+    // console.log(element);
+    // //appending the element
+    // document.body.appendChild(element);
+ 
+    let mydiv=document.getElementById("mydiv");
+    let bodyy=document.body;
+    mydiv.style.background="yellow";
+    bodyy.style.background="aqua";
+    let element=document.createElement("h1");
+    element.textContent="MY Website";
+    mydiv.insertAdjacentElement("beforebegin",element);
+
+</script>
+</html>

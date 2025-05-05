@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+        /* universal selector */
+        *{
+            margin:0;
+            padding: 0;
+        }
+        /* element selector */
+        p{
+            color: red;
+        }
+        /* class selector */
+        .container{
+            border: 3px solid whitesmoke;
+            background-color: aquamarine;
+        }
+        /* id selector */
+        #div1{
+            border: 2px solid black;
+            
+        }
+        /* decendent selector */
+        div h1{
+            color: brown;
+        }
+        /* child selector */
+        #div1 >h2{
+            color: blueviolet;
+        }
+        /* pseudo selector */
+        a:hover{
+            background-color: blue;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>this is selector</p>
+        <h1>this is example of selector </h1>
+        <div id="div1">
+            <h2>this is child selector</h2>
+            this is 1st div 
+        </div>
+    </div>
+    <div>
+        <a href="//www.google.com"> go to google</a>
+    </div>
+</body>
+</html>

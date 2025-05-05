@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positioning</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 800px;  
+            background-color: aquamarine;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .container2{
+            border: 2px solid black;
+            height: 800px;
+            background-color: red;
+
+
+        }
+        .box{
+            margin: 5px;
+            border: 2px solid black;
+            width: 60px;
+            height: 60px;
+        }
+        #box2{
+            margin: 3px;
+            background-color: blue;
+            position: relative;
+            margin-top: 140px;
+            text-align: center;
+        }
+        #box3{
+            position: absolute;
+            background-color: chartreuse;
+            margin-left: 400px;
+        }
+        #box4{
+            position: fixed;
+            background-color: darkgoldenrod;
+
+        }
+        #box5{
+
+            position: sticky;
+            background-color: brown;
+            top:0   px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">this is box 1</div>
+        <div class="box" id="box2">this is relative position</div>
+        <div class="box" id="box3">this is absolute position</div>
+        <div class="box" id="box4">this is fixed position</div>
+        <div class="box" id="box5">this is sticky position</div>
+
+
+
+
+    </div>
+    <div class="container2">
+        outer box
+    </div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+$primary-bg: rgb(236, 226, 213);
+$secondary-bg: white;
+$border-color: rgb(236, 226, 213);
+$button-bg: rgb(211, 202, 202);
+$button-dark-bg: black;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+}
+
+label {
+  font-weight: 525;
+}
+
+.container {
+  background-color: $primary-bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+
+  @media (max-width: 750px) {
+    width: 100vw;
+    overflow: hidden;
+  }
+}
+
+.content {
+  padding: 3rem 1rem 8px 1rem;
+  width: 55%;
+  background-color: $secondary-bg;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  @media (max-width: 750px) {
+    width: 100vw;
+    height: 80vh;
+  }
+}
+
+.patientname, .secondbox, .email, .password, .last2, .final {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1rem;
+  margin-top: 1rem;
+  column-gap: 20px;
+}
+
+input {
+  &[type=name],
+  &[type=date],
+  &[type=email],
+  &[type=password],
+  &[type=phone] {
+    box-sizing: border-box;
+    border: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid $border-color;
+  }
+
+  &[type=name] {
+    border-bottom-width: 2px;
+  }
+
+  &[type=checkbox] {
+    accent-color: red;
+  }
+}
+
+.genderbox, .treatmentbox {
+  margin-top: 1rem;
+  display: flex;
+  gap: 20px;
+}
+
+.firstname, .middlename, .lastname {
+  display: flex;
+  width: 33%;
+  row-gap: 1rem;
+  flex-direction: column;
+}
+
+.dateofbirth, .treatment, .secemail {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.firemail, .phonenumber, .pass1, .pass2 {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.image {
+  padding: {
+    right: 3rem;
+    top: 2rem;
+  }
+}
+
+.image2 {
+  padding-top: 2rem;
+}
+
+.firtbut, .secbut, .thirbut {
+  height: 2.3rem;
+  border-radius: 6px;
+  font-size: medium;
+  font-weight: bold;
+  text-align: center;
+  border: 1px none $secondary-bg;
+  cursor: pointer;
+}
+
+.firtbut {
+  width: 6rem;
+  background-color: $button-bg;
+}
+
+.secbut {
+  width: 5rem;
+  background-color: $button-bg;
+}
+
+.thirbut {
+  width: 6rem;
+  background-color: $button-dark-bg;
+  color: white;
+}
+
+.leftbutton {
+  display: flex;
+  column-gap: 12px;
+}

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsible Table</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: rgb(46, 46, 172);
+        }
+
+        .containertable {
+            max-width: 1440px;
+            width: 100%;
+            background-color: white;
+            margin: 5rem 2.5rem 5rem 2.5rem;
+
+        }
+
+
+        .tableclass {
+            width: 100%;
+            border-collapse: collapse;
+            max-width: auto;
+            height: 40vh;
+        }
+
+        tr:nth-child(even) {
+            background-color: #D6EEEE;
+        }
+
+        tr:hover {
+            background-color: blanchedalmond;
+        }
+
+        th:hover {
+            background-color: rgb(174, 170, 177);
+            color: red !important;
+        }
+
+        th,
+        td {
+            border: 0.5px solid #dddddd;
+        }
+
+        thead th {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .tableclass {
+            text-align: center;
+        }
+
+        .headingtag {
+            text-align: center;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+
+        }
+
+        .wrapper {
+            overflow-x: auto;
+        }
+
+        @media(max-width:650px) {
+          
+            .tableclass{
+            
+                overflow-x:scroll;
+                overflow-y: scroll;
+                max-width: auto;
+                height:auto ;
+            }
+
+            /* td{
+                display: block;
+                padding: 0.5rem 1rem;
+            } */
+            /* use grid */
+            th,
+            td {
+                overflow-x: scroll;
+                overflow-y: auto;
+
+            }
+
+            tr:nth-child(even) {
+                background-color: #D6EEEE;
+            }
+
+            tr:hover {
+                background-color: blanchedalmond;
+            }
+
+            th:hover {
+                background-color: rgb(174, 170, 177);
+                color: red !important;
+            }
+
+            /* td:before{
+                content: attr(data-label) ": ";
+                font-weight: 700;
+            }
+            td:first-child{
+                padding: 0.5rem 1rem;
+
+            }
+            td:last-child{
+                padding: 0.5rem 1rem;
+            } */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="containertable">
+        <h2 class="headingtag">Responsive Table Using HTML and CSS</h2>
+        <div class="wrapper">
+            <table class="tableclass">
+                <thead>
+                    <tr>
+                        <th>User id</th>
+                        <th> User Name</th>
+                        <th>User Email</th>
+                        <th>Status</th>
+                        <th colspan="2">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td data-label="user id">0001</td>
+                        <td data-label="name">John Doe</td>
+                        <td data-label="Email"> John@gmail.com</td>
+                        <td data-label="Status">Active</td>
+                        <td data-label="Action">
+                            <i class="fa fa-pencil"></i>
+                        </td>
+                        <td data-label="Delete">
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="user id">0002</td>
+                        <td data-label="name">Tom</td>
+                        <td> tom@gmail.com</td>
+                        <td>Active</td>
+                        <td data-label="Edit">
+                            <i class="fa fa-pencil"></i>
+                        </td>
+                        <td data-label="Delete">
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="user id">0003</td>
+                        <td data-label="name"> Doe</td>
+                        <td data-label="Email"> doe@gmail.com</td>
+                        <td data-label="Status">Active</td>
+                        <td data-label="Action">
+                            <i class="fa fa-pencil"></i>
+                        </td>
+                        <td data-label="Delete">
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="user id">0004</td>
+                        <td data-label="name">Jack</td>
+                        <td> Jack@gmail.com</td>
+                        <td data-label="Action">Active</td>
+                        <td data-label="Action">
+                            <i class="fa fa-pencil"></i>
+                        </td>
+                        <td data-label="Delete">
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="user id">0005</td>
+                        <td data-label="name">Ben</td>
+                        <td data-label="Email"> ben@gmail.com</td>
+                        <td data-label="Status">Active</td>
+                        <td data-label="Action">
+                            <i class="fa fa-pencil"></i>
+                        </td>
+                        <td data-label="Delete">
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="user id">0005</td>
+                        <td data-label="name">Ben</td>
+                        <td data-label="Email"> ben@gmail.com</td>
+                        <td data-label="Status">Active</td>
+                        <td data-label="Action">
+                            <i class="fa fa-pencil"></i>
+                        </td>
+                        <td data-label="Delete">
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="user id">0005</td>
+                        <td data-label="name">Ben</td>
+                        <td data-label="Email"> ben@gmail.com</td>
+                        <td data-label="Status">Active</td>
+                        <td data-label="Action">
+                            <i class="fa fa-pencil"></i>
+                        </td>
+                        <td data-label="Delete">
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="user id">0005</td>
+                        <td data-label="name">Ben</td>
+                        <td data-label="Email"> ben@gmail.com</td>
+                        <td data-label="Status">Active</td>
+                        <td data-label="Action">
+                            <i class="fa fa-pencil"></i>
+                        </td>
+                        <td data-label="Delete">
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="user id">0005</td>
+                        <td data-label="name">Ben</td>
+                        <td data-label="Email"> ben@gmail.com</td>
+                        <td data-label="Status">Active</td>
+                        <td data-label="Action">
+                            <i class="fa fa-pencil"></i>
+                        </td>
+                        <td data-label="Delete">
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="user id">0005</td>
+                        <td data-label="name">Ben</td>
+                        <td data-label="Email"> ben@gmail.com</td>
+                        <td data-label="Status">Active</td>
+                        <td data-label="Action">
+                            <i class="fa fa-pencil"></i>
+                        </td>
+                        <td data-label="Delete">
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="user id">0005</td>
+                        <td data-label="name">Ben</td>
+                        <td data-label="Email"> ben@gmail.com</td>
+                        <td data-label="Status">Active</td>
+                        <td data-label="Action">
+                            <i class="fa fa-pencil"></i>
+                        </td>
+                        <td data-label="Delete">
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="user id">0005</td>
+                        <td data-label="name">Ben</td>
+                        <td data-label="Email"> ben@gmail.com</td>
+                        <td data-label="Status">Active</td>
+                        <td data-label="Action">
+                            <i class="fa fa-pencil"></i>
+                        </td>
+                        <td data-label="Delete">
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="user id">0005</td>
+                        <td data-label="name">Ben</td>
+                        <td data-label="Email"> ben@gmail.com</td>
+                        <td data-label="Status">Active</td>
+                        <td data-label="Action">
+                            <i class="fa fa-pencil"></i>
+                        </td>
+                        <td data-label="Delete">
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="user id">0005</td>
+                        <td data-label="name">Ben</td>
+                        <td data-label="Email"> ben@gmail.com</td>
+                        <td data-label="Status">Active</td>
+                        <td data-label="Action">
+                            <i class="fa fa-pencil"></i>
+                        </td>
+                        <td data-label="Delete">
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="user id">0005</td>
+                        <td data-label="name">Ben</td>
+                        <td data-label="Email"> ben@gmail.com</td>
+                        <td data-label="Status">Active</td>
+                        <td data-label="Action">
+                            <i class="fa fa-pencil"></i>
+                        </td>
+                        <td data-label="Delete">
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="user id">0005</td>
+                        <td data-label="name">Ben</td>
+                        <td data-label="Email"> ben@gmail.com</td>
+                        <td data-label="Status">Active</td>
+                        <td data-label="Action">
+                            <i class="fa fa-pencil"></i>
+                        </td>
+                        <td data-label="Delete">
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="user id">0005</td>
+                        <td data-label="name">Ben</td>
+                        <td data-label="Email"> ben@gmail.com</td>
+                        <td data-label="Status">Active</td>
+                        <td data-label="Action">
+                            <i class="fa fa-pencil"></i>
+                        </td>
+                        <td data-label="Delete">
+                            <i class="fa fa-trash"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

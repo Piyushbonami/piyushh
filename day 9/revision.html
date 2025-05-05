@@ -1,0 +1,62 @@
+<!-- grid items -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid items</title>
+    <style>
+        .container{
+            background-color: aquamarine;
+            width: 600px;
+            height: 600px;
+            margin:auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(4,1fr);
+            row-gap: 3px;
+            column-gap: 3px;
+            
+        }
+        .itmes1{
+            width:auto;
+            height:fit-content;
+            background-color: rgb(81, 53, 107);
+            grid-column: 1;
+            grid-column-end: 4;
+        }
+        .itmes2{
+            background-color: chocolate;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        .itmes3{
+            background-color: gray;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        .itmes4{
+            background-color: cornsilk;
+        }
+        .itmes5{
+            background-color: darkorange;
+        }
+        .itmes6{
+            background-color: dodgerblue;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    </style>
+ </head>
+ <body>
+    <div class="container">
+        <div class="itmes1">1st</div>
+        <div class="itmes2">2nd</div>
+        <div class="itmes3">3rd</div>
+        <div class="itmes4">4th</div>
+        <div class="itmes5">5th</div>
+        <div class="itmes6">6th</div>
+    </div>
+    
+ </body>
+ </html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollable table</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        caption {
+            text-align: center;
+            margin-bottom: 1rem;
+
+
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .tableclass {
+            border-collapse: collapse;
+            margin: 100px auto;
+            width: 60%;
+            height: 50rem;
+
+
+        }
+
+        .tableclass thead {
+            border: 2px solid black;
+            text-align: left;
+            padding: auto;
+            position: sticky;
+            top: 0;
+        }
+
+        .tableclass td {
+            border: 1px solid black;
+            text-align: center;
+            padding: auto;
+
+        }
+
+        .tableclass th,
+        .tableclass td {
+            padding: 6px 8px;
+        }
+
+        .tableclass tbody tr:nth-child(even) {
+            background-color: aqua;
+        }
+
+        .tableclass thead {
+            background-color: rgb(27, 182, 27);
+            color: white;
+            font-weight: 400;
+        }
+
+        @media(max-width:700px) {
+
+            h3 {
+                text-align: end;
+                text-overflow: clip;
+                font-size: smaller;
+                color: red;
+            }
+
+            .tableclass {
+                display: block;
+                width: 80%;
+                overflow-x: auto;
+                overflow-y: auto;
+                height: 40rem;
+
+
+
+            }
+
+        }
+
+        @media(max-width:500px) {
+
+            /* body{
+                width: 15rem;
+                height: 10rem;
+            } */
+            caption {
+                text-align: end;
+                text-overflow: clip;
+                font-size: smaller;
+                color: yellow;
+            }
+
+            .tableclass {
+                display: block;
+
+                width: 90%;
+                height: 30rem;
+                overflow-y: auto;
+
+                overflow-x: auto;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <table class="tableclass">
+        <caption>Top 10 Grossing Animated Films Of All Time</caption>
+        <thead>
+            <tr>
+                <th>Film Title</th>
+                <th>Released</th>
+                <th>Studio</th>
+                <th>Worldwide Gross </th>
+                <th>Domestic Gross</th>
+                <th>Internation Gross</th>
+                <th>Budget</th>
+                <th>Seen</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>The Lion King (2019 remake)</td>
+                <td> 2019</td>
+                <td>Disney</td>
+                <td>$13488488</td>
+                <td>$287383838</td>
+                <td>$566868969696</td>
+                <td>$68686966</td>
+                <td>
+                    <input type="checkbox">
+                </td>
+            </tr>
+            <tr>
+                <td>harry potter</td>
+                <td> 2019</td>
+                <td>Disney</td>
+                <td>$13488488</td>
+                <td>$287383838</td>
+                <td>$566868969696</td>
+                <td>$68686966</td>
+                <td>
+                    <input type="checkbox">
+                </td>
+            </tr>
+            <tr>
+                <td>toy fight</td>
+                <td> 2019</td>
+                <td>Disney</td>
+                <td>$13488488</td>
+                <td>$287383838</td>
+                <td>$566868969696</td>
+                <td>$68686966</td>
+                <td>
+                    <input type="checkbox">
+                </td>
+            </tr>
+            <tr>
+                <td>avengers</td>
+                <td> 2019</td>
+                <td>Disney</td>
+                <td>$13488488</td>
+                <td>$287383838</td>
+                <td>$566868969696</td>
+                <td>$68686966</td>
+                <td>
+                    <input type="checkbox">
+                </td>
+            </tr>
+            <tr>
+                <td>The Lion King 5</td>
+                <td> 2019</td>
+                <td>Disney</td>
+                <td>$13488488</td>
+                <td>$287383838</td>
+                <td>$566868969696</td>
+                <td>$68686966</td>
+                <td>
+                    <input type="checkbox">
+                </td>
+            </tr>
+            <tr>
+                <td>Monkey king</td>
+                <td> 2019</td>
+                <td>Disney</td>
+                <td>$13488488</td>
+                <td>$287383838</td>
+                <td>$566868969696</td>
+                <td>$68686966</td>
+                <td>
+                    <input type="checkbox">
+                </td>
+            </tr>
+            <tr>
+                <td>The Lion King (2019 remake)</td>
+                <td> 2019</td>
+                <td>Disney</td>
+                <td>$13488488</td>
+                <td>$287383838</td>
+                <td>$566868969696</td>
+                <td>$68686966</td>
+                <td>
+                    <input type="checkbox">
+                </td>
+            </tr>
+            <tr>
+                <td>The Lion King (2019 remake)</td>
+                <td> 2019</td>
+                <td>Disney</td>
+                <td>$13488488</td>
+                <td>$287383838</td>
+                <td>$566868969696</td>
+                <td>$68686966</td>
+                <td>
+                    <input type="checkbox">
+                </td>
+            </tr>
+            <tr>
+                <td>The Lion King (2019 remake)</td>
+                <td> 2019</td>
+                <td>Disney</td>
+                <td>$13488488</td>
+                <td>$287383838</td>
+                <td>$566868969696</td>
+                <td>$68686966</td>
+                <td>
+                    <input type="checkbox">
+                </td>
+            </tr>
+            <tr>
+                <td>The Lion King (2019 remake)</td>
+                <td> 2019</td>
+                <td>Disney</td>
+                <td>$13488488</td>
+                <td>$287383838</td>
+                <td>$566868969696</td>
+                <td>$68686966</td>
+                <td>
+                    <input type="checkbox">
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+
+
+
+</body>
+
+</html>
