@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Registration</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            width: 41%;
+            height: auto;
+            background-color: white;
+            margin: auto;
+            /* width: 70; */
+            padding: 20px;
+        }
+
+        .field {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 28px;
+            justify-content: space-between;
+        }
+
+        .field-name {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .field-name input {
+            /* width: 50%; */
+            font-family: sans-serif;
+            padding: 10px;
+            border-radius: 5px;
+            outline: none;
+            border: 1px solid grey;
+            text-decoration: none;
+        }
+    
+
+        #button {
+            margin-top: 5px;
+            text-align: center;
+            padding: 20px opx;
+            background-color: blue;
+            width: 80px;
+        }
+    </style>
+</head>
+
+<body style="background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(65, 130, 115, 1) 35%, rgba(0, 212, 255, 1) 100%);
+background-size: cover;
+display: flex;
+height: 100vh;
+align-items: center;
+justify-content: center;">
+    <div class="container">
+        <div style="font-size: 30px;margin-bottom: 10px;"><u style="text-decoration-color: blue;">Re</u>gistration
+        </div>
+        <h3 style="color: grey;">Personal Details</h3>
+        <div class="field">
+            <div class="field-name">
+                <label for="name"><b>Full Name</b> </label>
+                <input type="name" placeholder="Enter your name" id="name">
+            </div>
+            <div class="field-name">
+                <label for="dob"><b>Date of birth </b></label>
+                <input type="dob" placeholder="Enter your date" id="dob">
+            </div>
+            <div class="field-name">
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter Your Email" id="email">
+            </div>
+            <div class="field-name">
+                <label for="num"><b>Mobile number</b></label>
+                <input type="number" placeholder="Enter Your Mobile Number" id="num">
+            </div>
+            <div class="field-name">
+                <label for="gender"><b>Gender</b></label>
+                <input type="name" placeholder="Enter your Gender" id="gender">
+            </div>
+            <div class="field-name">
+                <label for="occ"><b>occupation</b></label>
+                <input type="name" placeholder="Enter your occupation" id="occ">
+            </div>
+        </div>
+        <h3 style="color: grey; padding-top: 25px;">Identity Details</h3>
+        <div class="field">
+            <div class="field-name">
+                <label for="name"><b>ID Type</b> </label>
+                <input type="name" placeholder="Enter ID type" id="name">
+            </div>
+            <div class="field-name">
+                <label for="dob"><b>ID Number </b></label>
+                <input type="dob" placeholder="Enter ID Number" id="dob">
+            </div>
+            <div class="field-name">
+                <label for="email"><b>Issue Authority</b></label>
+                <input type="email" placeholder="Enter issue deparment" id="email">
+            </div>
+            <div class="field-name">
+                <label for="num"><b>Issue Date</b></label>
+                <input type="number" placeholder="Enter ID issue date" id="num">
+            </div>
+            <div class="field-name">
+                <label for="gender"><b>Issue State</b></label>
+                <input type="name" placeholder="Enter ID issue state" id="gender">
+            </div>
+            <div class="field-name">
+                <label for="occ"><b>Expiry Date</b></label>
+                <input type="date" style="padding-left: 72px;" placeholder="Enter ID Expiry" id="occ">
+            </div>
+        </div>
+        <label for="button"></label>
+        <input type="submit" id="button" value="Next->">
+    </div>
+
+</body>
+
+</html>
